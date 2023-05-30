@@ -1,3 +1,5 @@
+torch==2.0.1
+torchvision==0.15.2
 opencv-python>=3
 yapf
 imageio
@@ -7,5 +9,7 @@ trimesh
 smplx
 coverage
 pytest
-git+https://github.com/facebookresearch/pytorch3d.git@stable
-git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch
+spconv-cu114
+#pytorch3d
+#git+https://github.com/facebookresearch/pytorch3d.git@stable
+#git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch

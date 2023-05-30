@@ -21,8 +21,9 @@ def calculate_ssim(im1, im2, data_range=255, multichannel=True):
     """calculate_ssim."""
     full_ssim = ssim(im1,
                      im2,
-                     val_range=data_range,
+                     data_range=data_range,
+                     channel_axis=2,
                      multichannel=multichannel,
-                     full=True)[1]
+                     full=True)[0]
     out_ssim = full_ssim.mean()
     return out_ssim
